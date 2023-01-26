@@ -1,0 +1,85 @@
+body {
+	background: linear-gradient(to bottom ,black ,gray);
+	height: 100vh;
+}
+h1{
+	text-align: center;
+	padding: 20px;
+	color: red;
+}
+@keyframes example2 {
+  0%   {background-color:rgba(225,225,200,0.3); left:0px; top:0px;}
+  25%  {background-color:rgba(225,200,225,0.3); left:200px; top:0px;}
+  50%  {background-color:rgba(200,225,225,0.3); left:200px; top:200px;}
+  75%  {background-color:rgba(200,200,200,0.4); left:0px; top:200px;}
+  100% {background-color:rgba(180,180,180,0.5); left:0px; top:0px;}
+  from {transform: translate(0px,0px);}
+  to{transform: translate(2px,4px);}
+
+}
+
+
+#upLine{
+	position: relative;
+	animation-name: example2 ;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	height: 100px;
+	background-color: rgba(225,225,200,0.2);
+
+}
+@keyframes example {
+	from{transform: rotateZ(-15deg);}
+	to{transform: rotateZ(0);}
+	from{background-color: white;}
+	to{background-color: black;}
+	from{color: black;}
+	to{color: white}
+	from{scale: 1.2}
+	to{scale: 1}
+}
+
+@media only screen and (max-width:700px){
+p {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	animation-name: example;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	border: solid 2px red;
+	padding: 2rem;
+	margin: 2rem;
+	margin-inline: auto 0;
+	font-size: 4rem;
+	text-align: center;
+	max-width : 0.3px;
+}
+.oneLine {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	padding-top:11em ;
+	width:100%;
+	margin: auto 0;
+}
+
+}
+.oneLine {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	padding-top:11em ;
+}
+
+p {
+	animation-name: example;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	border: solid 10px red;
+	padding: 20px 5rem;
+	margin: 2px;
+	margin-inline: 15px;
+	font-size: 8rem;
+	color:antiquewhite;
+}
